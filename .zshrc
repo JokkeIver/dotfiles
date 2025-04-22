@@ -121,7 +121,8 @@ export PATH="$HOME/Documents/03 - Ressourcer/BashScript/Scripts/:$PATH"
 alias lg=lazygit
 
 # For Tmux
-alias ts='tmux'
+alias t='tmux'
+alias ta='tmux attach -t'
 alias ts='tmux new -s'
 alias tks='tmux kill-session -t'
 alias tka='tmux kill-server'
