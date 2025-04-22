@@ -117,4 +117,11 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$HOME/Documents/03 - Ressourcer/BashScript/Scripts/:$PATH"
 
 # Cusom Alias
+# For Lazygit
 alias lg=lazygit
+
+# For Tmux
+alias ts='tmux'
+alias ts='tmux new -s'
+alias tks='tmux kill-session -t'
+alias tka='tmux kill-server'
