@@ -1,0 +1,185 @@
+{
+  "Inline Math": {
+    "prefix": "$",
+    "body": "$${1}$",
+    "description": "Inserts a inline math environment"
+  },
+  "IMO Template": {
+    "prefix": [
+      "imo",
+      "IMO",
+      "tmp"
+    ],
+    "body": [
+      "\\documentclass[a4paper,12pt]{article}",
+      "",
+      "% Packages",
+      "\\usepackage{amsmath} % For math typesetting",
+      "\\usepackage{amssymb} % For additional math symbols",
+      "\\usepackage{geometry} % To adjust the page margins",
+      "\\usepackage{graphicx} % To allow insert of pictures",
+      "\\usepackage{float}    % Allows use of [H]",
+      "",
+      "% Bib ",
+      "\\usepackage{biblatex} % Imports biblatex package \\\\",
+      "\\addbibresource{ref.bib} % Import the bibliography file",
+      "",
+      "% Custom commands",
+      "\\newcommand{\\myblock}[1]{#1}",
+      "",
+      "% Page margins",
+      "\\geometry{margin=1in}",
+      "",
+      "% Character typeset",
+      "\\mathcode`\\*=\"8000 \\catcode`\\*\\active\\gdef*{\\cdot} % Makes * = \\cdot in math",
+      "",
+      "% Document title and author information",
+      "\\title{Math Exercises - Week [X]}",
+      "\\author{Joakim Iversen}",
+      "\\date{XX-XX-XXXX}",
+      "",
+      "\\begin{document}",
+      "",
+      "% Generate the title",
+      "\\maketitle",
+      "",
+      "",
+      "",
+      "\\end{document}"
+    ],
+    "description": "Math LaTeX template for IMO-like exercises and documents"
+  },
+  "ADS Template": {
+    "prefix": [
+      "ads",
+      "ADS",
+      "tmp"
+    ],
+    "body": [
+      "\\documentclass[a4paper,12pt]{article}",
+      "",
+      "% Packages",
+      "\\usepackage[utf8]{inputenc}  % For Danish characters",
+      "\\usepackage{amsmath, amssymb}  % For math symbols",
+      "\\usepackage{listings}         % For code",
+      "\\usepackage{graphicx}         % For including images",
+      "\\usepackage{fancyhdr}         % For headers/footers",
+      "\\usepackage{hyperref}         % For hyperlinks",
+      "\\usepackage{algorithm}        % For algorithms",
+      "\\usepackage[noend]{algpseudocode}    % For pseudocode",
+      "",
+      "% Page setup",
+      "\\setlength{\\parindent}{0pt}   % No indentation",
+      "\\setlength{\\parskip}{1em}     % Space between paragraphs",
+      "\\pagestyle{fancy}             % Fancy headers and footers",
+      "",
+      "% Bib setup",
+      "\\usepackage[style=nature]{biblatex} % Setup the style for bib",
+      "\\bibliography{ref} % Import bib-file",
+      "",
+      "% Character typeset",
+      "\\mathcode`\\*=\"8000 {\\catcode`\\*\\active\\gdef*{\\cdot}} % Makes * = \\cdot in math",
+      "",
+      "% Custom Commands",
+      "\\newcommand{\\myblock}[1]{#1}",
+      "",
+      "% Header/footer",
+      "\\fancyhf{}",
+      "\\fancyhead[L]{\\textbf{Algorithm Assignment}}  % Left header",
+      "\\fancyhead[R]{\\textbf{Joakim Iversen}}       % Right header",
+      "\\fancyfoot[C]{\\thepage}                      % Page number",
+      "",
+      "% Title setup",
+      "\\title{Algorithm Assignment}",
+      "\\author{Joakim Iversen  \\\\",
+      "        Student nr: 202404955 \\\\",
+      "        University of Aarhus}",
+      "\\date{\\today}",
+      "",
+      "\\begin{document}",
+      "",
+      "\\maketitle",
+      "",
+      "",
+      "",
+      "\\end{document}"
+    ],
+    "description": "LaTeX template for algorithm assignments with header and footer setup"
+  },
+  "collapsing region": {
+    "prefix": [
+      "myblock",
+      "section",
+      "sec"
+    ],
+    "body": [
+      "%region",
+      "",
+      "%endregion"
+    ],
+    "description": "Writes a region that can be collapsed"
+  },
+  "Basic 3x3 matrix": {
+    "prefix": "3x3",
+    "body": [
+      "\\begin{pmatrix}",
+      "  ${1} & ${2} & ${3} \\\\\\",
+      "  ${4} & ${5} & ${6} \\\\\\",
+      "  ${7} & ${8} & ${9}",
+      "\\end{pmatrix}"
+    ],
+    "description": "Basic 3x3 matrix"
+  },
+  "Basic 5x5 matrix": {
+    "prefix": "5x5",
+    "body": [
+      "\\begin{pmatrix}",
+      "  ${1} & ${2} & ${3} & ${4} & ${5} \\\\",
+      "  ${6} & ${7} & ${8} & ${9} & ${10} \\\\",
+      "  ${11} & ${12} & ${13} & ${14} & ${15} \\\\",
+      "  ${16} & ${17} & ${18} & ${19} & ${20} \\\\",
+      "  ${21} & ${22} & ${23} & ${24} & ${25}",
+      "\\end{pmatrix}"
+    ],
+    "description": "Basic 5x5 matrix"
+  },
+  "Basic 2x2 matrix": {
+    "prefix": "2x2",
+    "body": [
+      "\\begin{pmatrix}",
+      "  ${1} & ${2} \\\\",
+      "  ${6} & ${7} \\\\",
+      "\\end{pmatrix}"
+    ],
+    "description": "Basic 2x2 matrix"
+  },
+  "Basic 4x4 matrix": {
+    "prefix": "4x4",
+    "body": [
+      "\\begin{pmatrix}",
+      " ${1} & ${2} & ${3} & ${4} \\\\",
+      " ${5} & ${6} & ${7} & ${8} \\\\",
+      " ${9} & ${10} & ${11} & ${12} \\\\",
+      " ${13} & ${14} & ${15} & ${16} \\\\",
+      "\\end{pmatrix}"
+    ],
+    "description": "Basic 4x4 matrix"
+  },
+  "Ny Forlæsning": {
+    "prefix": "Forelæsning",
+    "body": [
+      "\\section*{Forlæsning ${CURRENT_DATE}/${CURRENT_MONTH} - ${CURRENT_YEAR}}",
+      "\\addcontentsline{toc}{section}{Forlæsning ${CURRENT_DATE}/${CURRENT_MONTH} - ${CURRENT_YEAR}}",
+      "",	
+      "\\begin{center}",
+      " \\textbf{textit{${1: Indtast titel}}}",
+      " \\phantomsection",
+      " \\addcontentsline{toc}{subsection}{${1}}",
+      "\\end{center}",
+      "",
+      "$0",
+      "\\newpage"
+    ],
+    "description": "Ny Forlæsning"
+  }
+}
