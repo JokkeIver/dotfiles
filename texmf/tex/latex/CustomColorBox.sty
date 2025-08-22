@@ -1,0 +1,22 @@
+\ProvidesPackage{CustomColorBox}
+\RequirePackage{tcolorbox}                                                          % Makes it so the user has to have the tcolorbox package included
+
+% Custom environment for definition box
+\newenvironment{defbox}[1][SAMPLE]
+  {
+    \begin{tcolorbox}[title={\textbf{Definition:} #1}, colframe=green!85!black]
+  }
+  {
+  \end{tcolorbox}
+  }
+
+% Custom Environment for Theorem
+\newenvironment{theobox}[1][SAMPLE]
+  {
+    \begin{tcolorbox}[title={\tetbf{Theorem:} #1}, colframe=orange!85!black]
+  }
+  {
+  \end{tcolorbox}
+  }
+
+% Custom Environment for 

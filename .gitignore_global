@@ -1,3 +1,14 @@
 *~
 .*.swp
 .DS_Store
+
+# Python
+.env
+__pychache__/
+*.pyc
+
+# VSCode
+.vscode/
+
+# Logs
+*.log
