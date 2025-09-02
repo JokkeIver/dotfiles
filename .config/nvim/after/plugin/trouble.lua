@@ -1,5 +1,5 @@
 -- Toggle Trouble
-vim.keymap.set("n", "<leader>xx", "<cmd>TroubleToggle<cr>", { desc = "Toggle Trouble" })
+vim.keymap.set("n", "<leader>xx", "Trouble diagnostics toggle", { desc = "Toggle Trouble" })
 
 -- Toggle Trouble for workspace diagnostics
 vim.keymap.set("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>", { desc = "Workspace diagnostics" })
