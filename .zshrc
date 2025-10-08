@@ -132,3 +132,6 @@ alias projekter='cd ~/Documents/01\ -\ Projekter/'
 alias områder='cd ~/Documents/02\ -\ Områder/'
 alias ressourcer='cd ~/Documents/03\ -\ Ressourcer/'
 alias arkiv='cd ~/Documents/04\ -\ Arkiv/'
+
+# ── For file display ──────────────────────────────────────────────────
+alias files='tree -L1'
