@@ -135,3 +135,8 @@ alias arkiv='cd ~/Documents/04\ -\ Arkiv/'
 
 # ── For file display ──────────────────────────────────────────────────
 alias files='tree -L1'
+
+# ── Custom funcitons ──────────────────────────────────────────────────
+ark() {
+  mv "$1" ~/Documents/04\ -\ Arkiv/
+}
