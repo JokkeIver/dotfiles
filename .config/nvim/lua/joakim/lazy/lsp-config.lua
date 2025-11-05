@@ -27,7 +27,21 @@ return {
       lspconfig.jdtls.setup({})
       lspconfig.cssls.setup({})
       lspconfig.ts_ls.setup({})
-      lspconfig.gopls.setup({})
+      lspconfig.gopls.setup({
+        settings = {
+          gopls = {
+            gofumpt = true,
+            usePlaceholders = true,
+            hints = {
+              assignVariableTypes = true,
+            },
+            -- 🔥 auto imports
+            codelenses = { generate = true, gc_details = true },
+            analyses = { unusedparams = true },
+            staticcheck = true,
+          },
+        },
+      })
 
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
       vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
