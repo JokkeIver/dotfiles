@@ -140,3 +140,6 @@ alias files='tree -L1'
 ark() {
   mv "$1" ~/Documents/04\ -\ Arkiv/
 }
+
+# To customize prompt, run `p10k configure` or edit ~/dotfiles/.p10k.zsh.
+[[ ! -f ~/dotfiles/.p10k.zsh ]] || source ~/dotfiles/.p10k.zsh
