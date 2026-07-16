@@ -1,14 +1,18 @@
 return {
   "nvim-treesitter/nvim-treesitter",
+  branch = "main",
   build = ":TSUpdate",
+  lazy = false,
   config = function()
-    local configs = require("nvim-treesitter.configs")
- 
-    configs.setup({
-        auto_install = true,
-        sync_install = false,
-        highlight = { enable = true },
-        indent = { enable = true },
+    require("nvim-treesitter").setup({
+      install_dir = vim.fn.stdpath("data") .. "/site",
+    })
+    -- highlighting is now enabled via autocmd, not configs.setup
+    vim.api.nvim_create_autocmd("FileType", {
+      pattern = "*",
+      callback = function()
+        pcall(vim.treesitter.start)
+      end,
     })
   end
 }
