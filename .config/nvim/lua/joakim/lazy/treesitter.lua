@@ -11,7 +11,7 @@ return {
     -- explicitly install the parsers you want if they are not already installed
     local ensure_installed = {
       "go", "sql", "bash", "java", "svelte", "html", "css",
-      "c", "lua", "vim", "vimdoc", "markdown", "markdown_inline",
+      "c", "lua", "vim", "vimdoc", "markdown", "markdown_inline", "python", "typescript", "tsx", "javascript", "jsx", "json"
     }
     local installed = require("nvim-treesitter").get_installed()
     local to_install = {}
