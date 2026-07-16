@@ -17,3 +17,6 @@ vim.keymap.set({ "n", "v" }, "<Leader>cm", "<Cmd>CBllbox14<CR>", {  noremap = tr
 -- use it a lot:
 vim.keymap.set({ "n", "v" }, "<Leader>cd", "<Cmd>CBd<CR>", {  noremap = true, silent = true })
 
+-- ── For Tuxedo ──────────────────────────────────────────────────────
+-- Open Tuxedo
+vim.keymap.set("n", "<Leader>tt", "<Cmd>:Tuxedo<CR>", { noremap = true, silent = true})
