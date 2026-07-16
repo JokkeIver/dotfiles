@@ -128,6 +128,7 @@ alias tks='tmux kill-session -t'
 alias tka='tmux kill-server'
 
 # ── For quick movements ───────────────────────────────────────────────
+alias inbox='cd ~/Documents/00\ -\ Inbox/'
 alias projekter='cd ~/Documents/01\ -\ Projekter/'
 alias områder='cd ~/Documents/02\ -\ Områder/'
 alias ressourcer='cd ~/Documents/03\ -\ Ressourcer/'
@@ -141,5 +142,19 @@ ark() {
   mv "$1" ~/Documents/04\ -\ Arkiv/
 }
 
+# ── For pyenv ─────────────────────────────────────────────────────────
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/.p10k.zsh.
 [[ ! -f ~/dotfiles/.p10k.zsh ]] || source ~/dotfiles/.p10k.zsh
+export LEDGER_FILE="/Users/joakim/Documents/02 - Områder/økonomi/2026.journal"
+
+
+# Added by Antigravity CLI installer
+export PATH="/Users/joakim/.local/bin:$PATH"
+export PATH="/Users/joakim/.local/bin:$PATH"
+
+export EDITOR=nvim
+export VISUAL=nvim
