@@ -119,3 +119,34 @@ The Leader key is mapped to `<Space>`.
   - `<leader>cl` ➔ Create a simple line comment.
   - `<leader>cm` ➔ Create a marked box comment.
   - `<leader>cd` ➔ Delete comment formatting.
+- `<leader>tt` → Opens Tuxedo todo
+
+## 📦 Installed Tools
+
+### Terminal
+- **Zsh** → Shell
+- **Oh My Zsh** → Zsh framework and plugin management
+- **Powerlevel10k** → Zsh prompt theme
+- **Tmux** → Terminal multiplexer
+- **TPM** → Tmux Plugin Manager
+- **Lazygit** → Terminal Git client
+
+### Editor
+- **Neovim** → Main text editor
+- **Lazy.nvim** → Neovim plugin manager
+- **Telescope.nvim** → Fuzzy finder
+- **Neo-tree** → File explorer
+- **blink.cmp** → Autocompletion engine
+- **nvim-treesitter** → Syntax parsing
+- **VimTeX** → LaTeX support
+- **Tuxedo** → Todo overview 
+
+### Development Tools
+- **Git** → Version control
+- **GNU Stow** → Dotfile management
+- **pyenv** → Python version management
+- **tree** → Directory visualization
+
+### Fonts
+- **MesloLGS Nerd Font** → Terminal icons and glyph support
+- **JetBrainsMono Nerd Font** → Alternative programming font
