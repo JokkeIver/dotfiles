@@ -10,3 +10,7 @@ vim.o.incsearch = true          -- Used to set Dynamic Search Highlighting
 vim.opt.tabstop = 2             -- Number of spaces a tab counts for
 vim.opt.shiftwidth = 2          -- Number of spaces for auto-indenting
 vim.opt.expandtab = true        -- Use spaces instead of tabs
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+vim.opt.foldenable = true
+vim.opt.foldlevel = 99
