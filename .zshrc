@@ -158,3 +158,6 @@ export PATH="/Users/joakim/.local/bin:$PATH"
 
 export EDITOR=nvim
 export VISUAL=nvim
+
+# ── Shortcut to open bgg ──────────────────────────────────────────────
+alias bgg='open https://www.boardgamegeek.com'
