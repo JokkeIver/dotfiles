@@ -67,6 +67,17 @@ return {
         enable_import_completion = true,
       })
 
+      vim.lsp.config("ocamllsp", {
+        capabilities = capabilities,
+        cmd = { "ocamllsp" },
+        filetypes = {
+          "ocaml",
+          "ocaml.interface",
+          "ocaml.menhir",
+          "ocaml.ocamllex",
+        },
+      })
+
 
       -- Enable LSP servers
       vim.lsp.enable({
@@ -79,6 +90,7 @@ return {
         "ts_ls",
         "gopls",
         "omnisharp",
+        "ocamllsp",
       })
 
       -- Keymaps
@@ -102,6 +114,7 @@ return {
           "cssls",
           "ts_ls",
           "gopls",
+          "ocamllsp",
         },
       })
     end,
